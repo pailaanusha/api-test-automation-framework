@@ -1,0 +1,6 @@
+
+pytest
+requests
+pytest-html
+google-generativeai
+jsonschema
