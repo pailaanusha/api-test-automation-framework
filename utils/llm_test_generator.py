@@ -1,4 +1,3 @@
-llm_generator_content = '''
 # ============================================================
 # LLM-BASED TEST GENERATOR
 # ------------------------------------------------------------
@@ -70,9 +69,9 @@ def generate_test_cases(api_specification):
     generated_text = generated_text.replace("```", "")
 
     return json.loads(generated_text)
-'''
 
-with open("utils/llm_test_generator.py", "w") as f:
-    f.write(llm_generator_content)
 
-print("llm_test_generator.py created")
+
+
+
+
