@@ -1,4 +1,3 @@
-api_spec_content = '''
 # ============================================================
 # REALISTIC API SPECIFICATION
 # ------------------------------------------------------------
@@ -133,9 +132,3 @@ api_specification = {
         }
     }
 }
-'''
-
-with open("data/api_specification.py", "w") as f:
-    f.write(api_spec_content)
-
-print("api_specification.py created")

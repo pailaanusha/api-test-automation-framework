@@ -1,4 +1,3 @@
-validators_content = '''
 # ============================================================
 # ADVANCED API RESPONSE VALIDATORS
 # ------------------------------------------------------------
@@ -145,9 +144,4 @@ class ResponseValidator:
         if "userId" in response_json:
 
             assert response_json["userId"] > 0
-'''
 
-with open("utils/validators.py", "w") as f:
-    f.write(validators_content)
-
-print("validators.py created")

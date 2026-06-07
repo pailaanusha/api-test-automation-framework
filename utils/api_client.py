@@ -1,24 +1,3 @@
-import os
-
-# List of directories that need to be recognized as Python packages
-package_dirs = [
-    "tests",
-    "utils",
-    "data"
-]
-
-# Create an empty __init__.py in each package directory
-for directory in package_dirs:
-    init_file_path = os.path.join(directory, "__init__.py")
-    if not os.path.exists(init_file_path):
-        with open(init_file_path, "w") as f:
-            f.write("")
-        print(f"Created {init_file_path}")
-    else:
-        print(f"{init_file_path} already exists")
-
-# Original content for api_client.py (kept for completeness as it was in the original cell)
-api_client_content = '''
 # ============================================================
 # API CLIENT UTILITY
 # ------------------------------------------------------------
@@ -61,10 +40,4 @@ class APIClient:
         )
 
         return response
-'''
-
-# Write api_client.py as before
-with open("utils/api_client.py", "w") as f:
-    f.write(api_client_content)
-
-print("api_client.py created")
+    
