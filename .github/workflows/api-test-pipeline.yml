@@ -5,15 +5,15 @@ on:
     branches:
       - main
       - API-*
-  pull_request:
-    branches:
-      - main
 
 jobs:
 
   api-tests:
 
     runs-on: ubuntu-latest
+
+    env:
+      GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
 
     steps:
 
@@ -30,6 +30,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run Pytest Suite
+      - name: Run Pytest
         run: |
           pytest
