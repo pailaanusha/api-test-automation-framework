@@ -9,7 +9,7 @@ import google.generativeai as genai # Reverted import to google.generativeai
 import json
 import os
 
-#os.environ['GOOGLE_API_KEY'] = 'AIzaSyCBUz2LJ5L4MLud-eu5ZcqHAQW7YOyVsUc' # Keeping hardcoded API key as requested
+
 # ------------------------------------------------------------
 # Configure Gemini API Key
 # Using genai.configure() with google.generativeai
